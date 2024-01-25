@@ -9,7 +9,6 @@ def get_db_manager(db_name):
     db_user = os.getenv("DB_USER")
     db_pwd = os.getenv("DB_PWD")
     uri = f"mongodb+srv://{db_user}:{db_pwd}@cluster0.o5uv7co.mongodb.net/?retryWrites=true&w=majority"
-    print(uri)
     try:
         client = MongoClient(uri,server_api=ServerApi('1'))
         print("Connection successful")
