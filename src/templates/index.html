@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros de Bitacora</title>
+</head>
+<body>
+    <h1>Registros de bitacora</h1>
+    <table>
+        <tr>
+            <th>Ubicacion</th>
+            <th>Fecha</th>
+        </tr>
+        {% for document in documents %}
+            <tr>
+                <td>{{ document["ubicacion"] }}</td>
+                <td>{{ document["fecha"] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
