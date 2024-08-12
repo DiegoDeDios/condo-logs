@@ -30,7 +30,7 @@ def log():
 	except Exception as e:
 		print(e)
 
-	if int(log_id) > 10:
+	if int(log_id) > 13:
 		raise Exception("Ubicacion no valida")
 	return f"<p>Registro de bitacora exitoso</p> <p>ID:{register_log['ubicacion']}</p><p>{get_cst_time(register_log['fecha'])}</p>"
 
